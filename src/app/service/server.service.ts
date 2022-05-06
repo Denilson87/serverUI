@@ -10,7 +10,7 @@ export class ServerService {
 
   constructor(private http: HttpClient) { }
 
-  getServers(): Observable<CustomResponse>{
+  getServers(): Observable <CustomResponse>{
     return this.http.get('http://localhost:8080/server/list')
   }
 }
